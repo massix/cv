@@ -101,6 +101,14 @@
   "WinNT"
 ))
 
+#resume-skill-item("langs", (
+  "Italian",
+  "French (fluent)",
+  "English (advanced)",
+  "Quenya (studying)",
+  "Toki Pona"
+))
+
 #resume-skill-item("misc", (
   [#fa-icon("heart") Neovim],
   "Helix",
