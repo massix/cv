@@ -1,0 +1,44 @@
+---
+# yamllint disable rule:truthy
+
+name: Build and publish PDF
+on: [push]
+
+env:
+  GH_SECRET_EMAIL: ${{ secrets.GH_SECRET_EMAIL }}
+  GH_SECRET_ADDRESS: ${{ secrets.GH_SECRET_ADDRESS }}
+  GH_SECRET_PHONE: ${{ secrets.GH_SECRET_PHONE }}
+  GH_SECRET_LINKEDIN: ${{ secrets.GH_SECRET_LINKEDIN }}
+
+permissions:
+  contents: write
+
+jobs:
+  build_pdf:
+    runs-on: ubuntu-latest
+    environment: main
+    steps:
+      - name: Setup Git Repository
+        uses: actions/checkout@v4
+      - name: Install Typst
+        uses: yusancky/setup-typst@v2
+        id: setup-typst
+        with:
+          version: v0.11.0
+      - run: make
+      - name: Publish PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdf
+          path: cv.pdf
+      - run: make dist
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/v')
+        with:
+          body: Generated with Typst and Github Actions
+          draft: false
+          make_latest: "true"
+          files: |
+            cv.pdf
+            cv.tgz
