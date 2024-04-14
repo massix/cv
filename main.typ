@@ -85,7 +85,7 @@
 ))
 
 #resume-skill-item("gnu/linux", (
-  [#fa-icon("heart") NixOS],
+  [#fa-heart() NixOS],
   "Debian",
   "RHEL",
   "CentOS",
@@ -110,7 +110,7 @@
 ))
 
 #resume-skill-item("misc", (
-  [#fa-icon("heart") Neovim],
+  [#fa-heart() Neovim],
   "Helix",
   "Typst"
 ))
