@@ -1,0 +1,41 @@
+#+title: Curriculum Vitae
+#+author: Massimo Gengarelli
+
+* Description
+  This project contains the source code used to generate the PDF file for my
+  curriculum vitae. This is a fork of my old
+  [[https://github.com/massix/Curriculum][curriculum vitae]] which was written
+  using =LaTeX= and the =awesome-cv= template. Nowadays I tend to avoid LaTeX
+  because of its complexity and prefer using [[https://typst.app][Typst]]
+  instead.
+
+* Compiling
+  In order to compile this project you need to make sure that you have the
+  following softwares installed and available on your machine.
+
+  - =typst= version 0.11.0 or higher;
+  - =gnumake= version 4.2 or higher;
+  - =unzip=
+  - =curl=
+  - =tar=
+  - =sed=
+
+  A [[./flake.nix][flake.nix]] file is provided along with a
+  [[./.envrc][.envrc]] file, so if you are using NixOS with flakes and direnv
+  you can simply =direnv allow .= and you will be in a nix shell with
+  everything pre-installed.
+
+  Once you have all the dependencies installed, you *must* create a
+  =.env.makefile= file, containing the following variables, set to the values
+  you want to show in the final result:
+
+  - =GH_SECRET_EMAIL=, containing the email address;
+  - =GH_SECRET_PHONE=, containing the phone number;
+  - =GH_SECRET_ADDRESS=, containing the address;
+  - =GH_SECRET_LINKEDIN=, containing the ID of your LinkedIn profile.
+
+  With all that done, make sure that you have an Internet connection available
+  and simply trigger the compilation and generation of the final PDF file with:
+  #+begin_src
+  $ make all
+  #+end_src

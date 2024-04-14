@@ -1,0 +1,8 @@
+.direnv/
+.env.makefile
+main-repl.typ
+*.pdf
+*.tgz
+dist/
+fonts/*
+!fonts/.gitkeep

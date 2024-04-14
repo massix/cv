@@ -1,0 +1,10 @@
+{
+  "neoconf": {
+    "live_reload": true
+  },
+  "lspconfig": {
+    "typst_lsp": {
+      "exportPdf": "never"
+    }
+  }
+}
