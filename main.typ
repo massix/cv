@@ -154,24 +154,24 @@
 
 #resume-item[
   - #text([Responsible of studying, coordinating and delivering high risk and
-    high commitment projects based on Cloud (public or on-premise)
+    high commitment projects based on *Cloud* (public or on-premise)
     technologies on behalf of ALTEN International.])
   - #text([Working directly with the commercial department and customers to
-    define the best strategy to deliver a project, taking into consideration the
-    level of commitment and customer's satisfaction.])
+    *define the best strategy to deliver a project*, taking into consideration
+    the level of commitment and customer's satisfaction.])
   - #text([Managing first contacts with potential new customers, definition of
     the functional perimeter of the project and architectural and technical
-    studies, creation and delivery of the technical documentation, part of the
+    studies, *creation and delivery of the technical documentation*, part of the
     contract's agreement.])
-  - #text([Development of Technical Proofs of Concept, covering all aspects of
+  - #text([Development of *technical proofs of concept*, covering all aspects of
     the development: setup of the infrastructure with IaC technologies and
     development of the technical components of the architecture, using multiple
     languages and frameworks.])
-  - #text([Coaching on new teams, responsible of validating future evolutions on
-    the technical architecture, responsible of the technical quality of the
+  - #text([*Coaching on new teams*, responsible of validating future evolutions
+    on the technical architecture, responsible of the technical quality of the
     project.])
-  - #text([Creation, definition and coordination of internal trainings on Cloud
-    based technologies (IaC, Cloud, ...)])
+  - #text([Creation, definition and coordination of *internal trainings* on
+    Cloud based technologies (IaC, Cloud, ...)])
   - #text([Maintenance and evolution of internal repositories of reusable
     components.])
 ]
@@ -188,14 +188,15 @@
 )
 
 #resume-item[
-  - #text([DCX *Digital Customer eXperience* is a brand new departement created
+  - #text([DCX *Digital Customer eXperience* is a brand new department created
     in ALTEN Sophia-Antipolis which focuses on delivering high commitment
     projects for final customers.])
-  - #text([Development of Technical Proofs of Concept, coaching on new teams.])
-  - #text([Responsible of three internship programs, coordinating the work of
-    nearly 30 junior developers in Marseille, Lyon and Sophia Antipolis,
-    developing internal libraries and applications to accelerate the development
-    of Cloud-Native applications.])
+  - #text([Development of technical *proofs of concept*, *coaching* on new
+    teams.])
+  - #text([Responsible of three internship programs, *coordinating* the work of
+    nearly *30 junior developers* in Marseille, Lyon and Sophia Antipolis,
+    developing internal libraries and applications to *accelerate the
+    development* of CloudNative applications.])
 ]
 
 // Orange Djingo Architect
@@ -210,14 +211,14 @@
 )
 
 #resume-item[
-  - #text([Part of a six architects international team (half from France, half
-    from Germany), leading the development of Djingo, a vocal assistant similar
-    to what Amazon Alexa and Google Home were developing at the time.])
-  - #text([Technical Leader for Java 8+ and Python 3.6 $mu$services.])
-  - #text([Full Cloud-based architecture (Microsoft Azure and Openshift).])
-  - #text([Supervising the deployment and run of one third of the overall
+  - #text([Part of a six *architects international team* , leading the technical
+    governance of Djingo, a vocal assistant similar to Amazon Alexa and Google
+    Home.])
+  - #text([*Technical Leader* for Java 8+ and Python 3.6 $mu$services.])
+  - #text([Full *Cloud based architecture* (Microsoft Azure and Openshift).])
+  - #text([Supervising the *deployment and run* of one third of the overall
     architecture of the project])
-  - #text([Head and coach of the _SuperMario Feature Team_, developing
+  - #text([*Head and coach* of the _SuperMario Feature Team_, developing
     $mu$services for IoT interaction.])
   - #text([Coordination with the _Orange Home_ team for definition of used APIs
     and needs.])
@@ -235,12 +236,12 @@
 )
 
 #resume-item[
-  - #text([Experienced Java 8+ developer, leading the _SuperMario Feature
-    Team_, responsible of handling the $mu$services for household equipments.])
-  - #text([Helping the Product Owner and Project Managers in defining the
-    technical solutions for the functional requirements.])
-  - #text([Team coaching, responsible of the technical quality of the delivered
-    products.])
+  - #text([Experienced Java 8+ developer, leading the _SuperMario Feature Team_,
+    responsible of developing the $mu$services for household equipments.])
+  - #text([Helping the Product Owner and Project Managers in *defining the
+    technical solutions* for the functional requirements.])
+  - #text([*Team coaching*, responsible of the technical quality of the
+    delivered products.])
 ]
 
 // Orange Misc
@@ -255,18 +256,18 @@
 )
 
 #resume-item[
-  - #text([Member of the virtual Cloud team, a team made up of only passionate
-    developers willing to spend some of their spare time working on modern cloud
-    technologies, developing proofs of concept, we were able to develop a Docker
-    interceptor in Python to implement an RBAC system on top of Docker Swarm,
-    making it possible to host different applications on the same cluster, with
-    segregation of responsibilities.])
-  - #text([Single handedly deployed a primitive FaaS solution for an internal
+  - #text([Member of the *virtual Cloud team*, a team made up of only passionate
+    developers willing to spend some of their spare time working on *modern
+    cloud technologies*, developing proofs of concept. Development of a Docker
+    interceptor in Python to implement a RBAC system on top of Docker Swarm, to
+    host different applications on the same cluster, with segregation of
+    responsibilities.])
+  - #text([Single handedly deployed a *primitive FaaS solution* for an internal
     project using Docker, spawning on-demand containers based on incoming REST
     APIs intercepted by a Java/Spring backend.])
   - #text([Took part in the very first steps of the migration from Docker Swarm
-    to Kubernetes.])
-  - #text([Introduced Elasticsearch as an alternative to an internal indexing
+    to *Kubernetes*.])
+  - #text([Introduced *Elasticsearch* as an alternative to an internal indexing
     solution for the #link("https://lemoteur.fr")[lemoteur search engine].])
   - #text([Migration of part of KE (Knowledge Engine) from C98 to C++11.])
 ]
@@ -284,10 +285,11 @@
 
 #resume-item[
   - #text([Working on the maintenance of the legacy TPF system, based on
-    High-Level Assembly (IBM Specification) on a z/OS Mainframe.])
+    *High-Level Assembly* (IBM Specification) on a z/OS Mainframe.])
   - #text([Migration of some modules from ASM to C.])
   - #text([Actively working with the rest of the team in migrating the whole
-    legacy system to a more modern solution based on GNU/Linux (SUSE) and C++.])
+    legacy system to a more modern solution based on *GNU/Linux* (SUSE) and
+    C++.])
 ]
 
 // Projects
