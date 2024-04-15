@@ -300,7 +300,7 @@
 #resume-entry(
   title: "Hwedis",
   location: github-link("massix/hwedis"),
-  date: "Since November 2013",
+  date: "Since November 2023",
   description: [
     Redis cache multiplexer
   ]
@@ -315,7 +315,7 @@
 #resume-entry(
   title: "Purescript Testcontainers",
   location: github-link("massix/purescript-testcontainers"),
-  date: "Since December 2013",
+  date: "Since December 2023",
   description: [
     High-level wrapper for Testcontainers, in Purescript and JS FFI
   ]
@@ -331,7 +331,7 @@
 #resume-entry(
   title: "AndiRPG",
   location: github-link("massix/andirpg"),
-  date: "Since January 2023",
+  date: "Since January 2024",
   description: [
     Nethack inspired game, developed in low-level C.
   ]
@@ -346,7 +346,7 @@
 #resume-entry(
   title: "NixOS Contributor and Maintainer",
   location: github-link("nixos/nixpkgs"),
-  date: "Summer 2021 - Ongoing",
+  date: "Summer 2023 - Ongoing",
   description: [
     Proud member of the NixOS Maintainers.
   ]
