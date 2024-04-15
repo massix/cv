@@ -134,8 +134,8 @@
     interconnected virtual machines through a Web based interface using KVM and
     VDE as system technologies. Fun fact: I love recursive acronyms.])
   - #text([#strong([KayaOS]): #mkGithubLink("kayaos") a full-fledged Operating
-    System for MIPS v1 architectures, made for educational purposes and
-    compatible with
+    System for MIPS v1 architectures, for educational purposes and compatible
+    with
     #link("https://wiki.virtualsquare.org/#/education/umps")[$mu$mps 2 and 3]])
 ]
 
@@ -199,6 +199,8 @@
     development* of CloudNative applications.])
 ]
 
+#pagebreak()
+
 // Orange Djingo Architect
 
 #resume-entry(
@@ -237,7 +239,7 @@
 
 #resume-item[
   - #text([Experienced Java 8+ developer, leading the _SuperMario Feature Team_,
-    responsible of developing the $mu$services for household equipments.])
+    of developing the $mu$services for household equipments.])
   - #text([Helping the Product Owner and Project Managers in *defining the
     technical solutions* for the functional requirements.])
   - #text([*Team coaching*, responsible of the technical quality of the
@@ -284,12 +286,11 @@
 )
 
 #resume-item[
-  - #text([Working on the maintenance of the legacy TPF system, based on
-    *High-Level Assembly* (IBM Specification) on a z/OS Mainframe.])
+  - #text([Maintenance of the legacy TPF system, based on *High-Level Assembly*
+    (IBM Specification) on a z/OS Mainframe.])
   - #text([Migration of some modules from ASM to C.])
-  - #text([Actively working with the rest of the team in migrating the whole
-    legacy system to a more modern solution based on *GNU/Linux* (SUSE) and
-    C++.])
+  - #text([Working with the rest of the team in migrating the legacy system to a
+    modern solution based on *GNU/Linux* (SUSE) and C++.])
 ]
 
 // Projects
@@ -299,7 +300,7 @@
 #resume-entry(
   title: "Hwedis",
   location: github-link("massix/hwedis"),
-  date: "Since November 2013",
+  date: "Since November 2023",
   description: [
     Redis cache multiplexer
   ]
@@ -314,7 +315,7 @@
 #resume-entry(
   title: "Purescript Testcontainers",
   location: github-link("massix/purescript-testcontainers"),
-  date: "Since December 2013",
+  date: "Since December 2023",
   description: [
     High-level wrapper for Testcontainers, in Purescript and JS FFI
   ]
@@ -330,7 +331,7 @@
 #resume-entry(
   title: "AndiRPG",
   location: github-link("massix/andirpg"),
-  date: "Since January 2023",
+  date: "Since January 2024",
   description: [
     Nethack inspired game, developed in low-level C.
   ]
@@ -345,7 +346,7 @@
 #resume-entry(
   title: "NixOS Contributor and Maintainer",
   location: github-link("nixos/nixpkgs"),
-  date: "Summer 2021 - Ongoing",
+  date: "Summer 2023 - Ongoing",
   description: [
     Proud member of the NixOS Maintainers.
   ]
