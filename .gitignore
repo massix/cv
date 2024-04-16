@@ -1,8 +1,22 @@
+# Nix
 .direnv/
+
+# Secrets
 .env.makefile
+
+# Intermediary files
 main-repl.typ
+
+# Outputs
 *.pdf
 *.tgz
 dist/
-fonts/*
+
+# Generated at each build
+fonts/
+downloads/
+.check
+
+# gitkeep files
 !fonts/.gitkeep
+!downloads/.gitkeep
