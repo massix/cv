@@ -1,7 +1,6 @@
 // vi: tw=80 colorcolumn=80,120,200 ts=2 sw=2
 
-#import "@preview/fontawesome:0.1.1": *
-#import "@preview/modern-cv:0.2.0": *
+#import "@preview/modern-cv:0.7.0": *
 #import "@preview/splash:0.3.0": xcolor
 
 #show: resume.with(
@@ -14,66 +13,57 @@
     linkedin: "@GH_SECRET_LINKEDIN@",
     address: "@GH_SECRET_ADDRESS@",
     positions: (
+      "Platform Engineer",
       "Coding Architect",
-      "DevOps Engineer",
       "Software Developer",
       "Opensource Passionate",
     )
   ),
   date: datetime.today().display(),
-  accent_color: xcolor.brick-red
+  accent-color: xcolor.brick-red
 )
 
 #let mkGithubLink(repo) = {
-  link("https://github.com/massix/" + repo, fa-icon("github", fa-set: "Brands"))
+  link("https://github.com/massix/" + repo, fa-icon("github"))
 }
 
 // The main template uses "Source Sans Pro", for which the license is not
 // compatible with what I would like to achieve. Let's use Source Sans 3
 // instead, which is more open and freely distributable.
-#set text(font: ("Source Sans 3"))
+#set text(font: "Source Sans 3")
 
 // Start with the keywords
 
 = Skills
 
+#resume-skill-item("cloud", (
+  "Kubernetes",
+  "Openshift",
+  [#fa-heart() Azure],
+  "Docker (swarm)"
+))
+
+#resume-skill-item("iac", (
+  [#fa-heart() Terraform],
+  "Ansible",
+  "Bicep",
+  [#fa-heart() Flux CD],
+  "GitLab CI",
+  "GitHub Actions",
+))
+
 #resume-skill-item("dev", (
   "Java",
   "Typescript",
-  "Javascript",
-  "C/C++",
-  [#fa-heart() Haskell],
-  "Purescript",
+  [#fa-heart() Golang],
   "Lua",
   "Nix"
-))
-
-#resume-skill-item("cloud", (
-  [#fa-heart() Azure],
-  "Kubernetes",
-  "Openshift",
-  "Docker (swarm)",
-  "Portainer",
-  "OpenFaaS",
-  "Ansible",
-  "Vagrant"
-))
-
-#resume-skill-item("ops", (
-  "Terraform",
-  "Bicep",
-  "Pulumi",
-  "GitLab CI",
-  "Bitbucket Pipelines",
-  "GitHub Actions",
-  "Drone CI"
 ))
 
 #resume-skill-item("gnu/linux", (
   [#fa-heart() NixOS],
   "Debian",
   "RHEL",
-  "Gentoo",
   "Arch (btw)"
 ))
 
@@ -81,8 +71,7 @@
   "Italian",
   "French (fluent)",
   "English (advanced)",
-  "Quenya (studying)",
-  "Toki Pona"
+  "Esperanto (beginner)",
 ))
 
 // Then a short presentation
@@ -101,12 +90,33 @@
 
 = Professional Experience
 
+// Questel
+
+#resume-entry(
+  title: "Platform Engineer in Systeam",
+  location: "Questel IP",
+  date: "Aug 2024 - Ongoing",
+  description: [
+    Senior DevOps Engineer for On-Premise infrastructures
+  ]
+)
+
+#resume-item[
+  - #text([Automation of Kubernetes Clusters creation using *Tanzu*, *Flux CD*,
+    *ytt* and *Cluster APIs* within our Datacenters.])
+  - #text([Clusters are pre-configured with sane defaults: *RBAC*, *Falco
+    Opertor*, *GPU Operator*, *Trident CSI*, *LGTM stack*.])
+  - #text([Creation of *Terraform modules* to ease the creation of IaaS-like
+    infrastructures in vSphere.])
+  - #text([Brought *GitOps* mindset within the team.])
+]
+
 // CloudNative
 
 #resume-entry(
   title: "Technical Head of CloudNative Tribe",
   location: "ALTEN SA",
-  date: "Jan 2020 - ongoing",
+  date: "Jan 2020 - Aug 2024",
   description: [
     Coding Architect, Technical Leader
   ]
@@ -236,6 +246,36 @@
 = Personal Projects
 
 #resume-entry(
+  title: "NixOS Contributor and Maintainer",
+  location: github-link("nixos/nixpkgs"),
+  date: "Aug 2023",
+  description: [
+    Proud member of the NixOS Maintainers.
+  ]
+)
+
+#resume-item[
+  As a maintainer, I am in charge of different derivations of the distribution,
+  I actively commit to the life of the product by also reviewing other pull
+  requests and being active in all the support and communication channels.
+]
+
+#resume-entry(
+  title: "Chaos Monkey",
+  location: github-link("massix/chaos-monkey"),
+  date: "Jan 2024",
+  description: [
+    Golang implementation of the Chaos Monkey from Netflix.
+  ]
+)
+
+#resume-item[
+  A Chaos Monkey Operator for Kubernetes, driven by a straightforward and easy
+  to configure CRD. Initially developed for a specific customer, then I was
+  given the permission to opensource it.
+]
+
+#resume-entry(
   title: "Hwedis",
   location: github-link("massix/hwedis"),
   date: "Nov 2023",
@@ -265,30 +305,6 @@
   library will soon be published on Pursuit and be available on the official
   channel.
 ]
-
-#resume-entry(
-  title: "AndiRPG",
-  location: github-link("massix/andirpg"),
-  date: "Jan 2024",
-  description: [
-    Nethack inspired game, developed in low-level C.
-  ]
-)
-
-#resume-item[
-  A videogame for nostalgic people, developed entirely on my smartphone using
-  Termux, Neovim, clangd and Android NDK. More of an hobbyist/geek project than
-  something serious.
-]
-
-#resume-entry(
-  title: "NixOS Contributor and Maintainer",
-  location: github-link("nixos/nixpkgs"),
-  date: "Aug 2023",
-  description: [
-    Proud member of the NixOS Maintainers.
-  ]
-)
 
 // Personal Interests
 
