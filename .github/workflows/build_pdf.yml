@@ -1,18 +1,13 @@
----
 # yamllint disable rule:truthy
-
 name: Build and publish PDF
 on: [push]
-
 env:
   GH_SECRET_EMAIL: ${{ secrets.GH_SECRET_EMAIL }}
   GH_SECRET_ADDRESS: ${{ secrets.GH_SECRET_ADDRESS }}
   GH_SECRET_PHONE: ${{ secrets.GH_SECRET_PHONE }}
   GH_SECRET_LINKEDIN: ${{ secrets.GH_SECRET_LINKEDIN }}
-
 permissions:
   contents: write
-
 jobs:
   build_pdf:
     runs-on: ubuntu-latest
@@ -24,7 +19,7 @@ jobs:
         uses: yusancky/setup-typst@v2
         id: setup-typst
         with:
-          version: v0.11.0
+          version: v0.12.0
       - run: make
       - name: Publish PDF
         uses: actions/upload-artifact@v4
