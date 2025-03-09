@@ -37,9 +37,9 @@
 = Skills
 
 #resume-skill-item("cloud", (
-  "Kubernetes",
+  [#fa-heart() Kubernetes],
   "Openshift",
-  [#fa-heart() Azure],
+  "Azure",
   "Docker (swarm)"
 ))
 
@@ -55,7 +55,8 @@
 #resume-skill-item("dev", (
   "Java",
   "Typescript",
-  [#fa-heart() Golang],
+  "Golang",
+  [#fa-heart() Gleam],
   "Lua",
   "Nix"
 ))
@@ -64,14 +65,13 @@
   [#fa-heart() NixOS],
   "Debian",
   "RHEL",
-  "Arch (btw)"
+  "Arch (btw)",
 ))
 
 #resume-skill-item("langs", (
   "Italian",
   "French (fluent)",
-  "English (advanced)",
-  "Esperanto (beginner)",
+  "English (advanced)"
 ))
 
 // Then a short presentation
@@ -103,18 +103,23 @@
 
 #resume-item[
   - #text([Automation of Kubernetes Clusters creation using *Tanzu*, *Flux CD*,
-    *ytt* and *Cluster APIs* within our Datacenters.])
-  - #text([Clusters are pre-configured with sane defaults: *RBAC*, *Falco
-    Opertor*, *GPU Operator*, *Trident CSI*, *LGTM stack*.])
+    *ytt*, *Cluster APIs* and *GitLab* within our datacenters.])
+  - #text([Clusters are pre-configured with sane defaults: *RBAC with Pinniped*,
+    *Falcon Operator*, *GPU Operator*, *Trident CSI*, *LGTM stack*, *Vault
+    Operator*.])
   - #text([Creation of *Terraform modules* to ease the creation of IaaS-like
     infrastructures in vSphere.])
   - #text([Brought *GitOps* mindset within the team.])
+  - #text([Developed *Kubernetes Operator* to handle updates to internal DNS
+    records.])
+  - #text([Developed *Kubernetes Operator* to upload `kubeconfig` files to
+    internal HashiCorp Vault upon cluster creation.])
 ]
 
 // CloudNative
 
 #resume-entry(
-  title: "Technical Head of CloudNative Tribe",
+  title: "Lead Cloud Architect of CloudNative Tribe",
   location: "ALTEN SA",
   date: "Jan 2020 - Aug 2024",
   description: [
@@ -132,16 +137,11 @@
   - #text([*Coordination and animation* of the _CloudNative Tribe_, focusing on
     development of internal reusable softwares with the aim of having fun with
     new technologies in safe environments while learning how to use them in
-    production. Currently developing 6 internal projects in *Haskell*, *Rust*,
+    production. Projects were developed using mainly *Haskell*, *Rust*,
     *Golang* and *Swift*.])
   - #text([*1-1 mentoring* for colleagues willing to learn more about
     CloudNative development and deployment. Successfully tutored a total of 30
-    students and following 4 consultants in their career path. _They grow so
-    fast_.])
-  - #text([Given 20+ *on-demand practical trainings* for consultants of all
-    levels, with up to 8 participants per session, in *French* or *English* in
-    CloudNative technologies (*Terraform*, *Kubernetes*, *CI/CD*, *GNU/Linux*
-    and *Kafka* being the most requested ones).])
+    students and followed 4 consultants in their career path.])
   - #text([Achieved and maintained an average of *90% code coverage* for the
     backend and *70% code coverage* for the frontend for all the projects.])
 ]
@@ -183,19 +183,15 @@
 )
 
 #resume-item[
-  - #text([Member of the virtual Cloud team, a team made up of 20 passionate
-    developers willing to spend some of their spare time working on *modern
-    cloud technologies*, developing proofs of concept. Successful development of
-    a *Docker* interceptor in *Python* to implement a RBAC system on top of
-    *Docker Swarm*, to host different applications on the same cluster, with
-    segregation of responsibilities.])
+  - #text([Participated in the development of a *Docker* interceptor in *Python*
+    to implement a RBAC system on top of *Docker Swarm*, to host different
+    applications on the same cluster, with segregation of responsibilities.])
   - #text([Single handedly deployed a *primitive FaaS solution* for an internal
     project using *Docker*, spawning on-demand containers based on incoming REST
     APIs intercepted by a *Java/Spring* backend.])
-  - #text([Took part in the very first steps of the migration from a 200 nodes
-    Docker Swarm scattered in 3 datacenters to *Kubernetes*.])
-  - #text([Introduced *Elasticsearch* as an alternative to an internal indexing
-    solution for the #link("https://lemoteur.fr")[lemoteur search engine].])
+  - #text([Participated in the migration of an internal indexing search engine
+    to *Elasticsearch* for the #link("https://lemoteur.fr")[lemoteur search
+    engine].])
   - #text([Migration of part of KE (Knowledge Engine) from C98 to *C++11*.])
 ]
 
@@ -241,82 +237,23 @@
 ]
 
 
-// Projects
+// Hobbies and Projects
 
-= Personal Projects
-
-#resume-entry(
-  title: "NixOS Contributor and Maintainer",
-  location: github-link("nixos/nixpkgs"),
-  date: "Aug 2023",
-  description: [
-    Proud member of the NixOS Maintainers.
-  ]
-)
+= Interests
 
 #resume-item[
-  As a maintainer, I am in charge of different derivations of the distribution,
-  I actively commit to the life of the product by also reviewing other pull
-  requests and being active in all the support and communication channels.
-]
+  In my spare time I do enjoy writing software, my
+  #link("https://github.com/massix")[GitHub Account] is the living proof of how
+  much I love experimenting. I am a *proud maintainer and contributor* of the
+  #link("https://github.com/nixos/nixpkgs")[*NixOS Linux Distribution*], for
+  which I maintain some derivations and rewrote the way Electron applications
+  are packaged.
 
-#resume-entry(
-  title: "Chaos Monkey",
-  location: github-link("massix/chaos-monkey"),
-  date: "Jan 2024",
-  description: [
-    Golang implementation of the Chaos Monkey from Netflix.
-  ]
-)
-
-#resume-item[
-  A Chaos Monkey Operator for Kubernetes, driven by a straightforward and easy
-  to configure CRD. Initially developed for a specific customer, then I was
-  given the permission to opensource it.
-]
-
-#resume-entry(
-  title: "Hwedis",
-  location: github-link("massix/hwedis"),
-  date: "Nov 2023",
-  description: [
-    Redis cache multiplexer written in Haskell
-  ]
-)
-
-#resume-item[
-  Used as the base of one of the internship programs in ALTEN, the main idea is
-  to intercept the calls to a Redis server and distribute the information about
-  the availability of the objects in the cache to avoid useless ping-pongs.
-]
-
-#resume-entry(
-  title: "Purescript Testcontainers",
-  location: github-link("massix/purescript-testcontainers"),
-  date: "Dec 2023",
-  description: [
-    High-level wrapper for Testcontainers, in Purescript and JS FFI
-  ]
-)
-
-#resume-item[
-  The wrapper uses Monads to isolate the execution environment of the containers
-  and to allow developers to easily interact with a running container. The
-  library will soon be published on Pursuit and be available on the official
-  channel.
-]
-
-// Personal Interests
-
-= Personal Interests
-
-#resume-item[
-  In no particular order: I love spending time with my beloved partner, our
-  beautiful cat and our friends. I enjoy practicing Beach Volley and going at
-  the gym, trying to stay fit despite the time moving forward faster than I'd
-  like to admit. I am a big supporter of Rimini Football Club, practically since
-  I was born and probably even sometime before. I do sympathize for FC
-  Internazionale and Bologna FC. I love boardgames, wargames, videogames and
-  basically everything ending in "games". And, of course, Opensource.
+  I enjoy practicing Beach Volley and going at the gym, trying to stay fit
+  despite the time moving forward faster than I'd like to admit. I am a big
+  supporter of Rimini Football Club, practically since I was born and probably
+  even sometime before. I do sympathize for FC Internazionale and Bologna FC.
+  I love boardgames, wargames, videogames and basically everything ending in
+  "games". And, of course, Opensource.
 ]
 
