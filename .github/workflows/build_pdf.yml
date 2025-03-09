@@ -16,10 +16,9 @@ jobs:
       - name: Setup Git Repository
         uses: actions/checkout@v4
       - name: Install Typst
-        uses: yusancky/setup-typst@v2
-        id: setup-typst
+        uses: typst-community/setup-typst@v4
         with:
-          version: v0.13.1
+          typst-version: 0.13.*
       - run: make
       - name: Publish PDF
         uses: actions/upload-artifact@v4
