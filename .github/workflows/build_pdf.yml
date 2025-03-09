@@ -19,7 +19,7 @@ jobs:
         uses: yusancky/setup-typst@v2
         id: setup-typst
         with:
-          version: v0.12.0
+          version: v0.13.1
       - run: make
       - name: Publish PDF
         uses: actions/upload-artifact@v4
